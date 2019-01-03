@@ -1,14 +1,14 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        张起灵
+tagline:      我是一个变态
 baseurl:      ""
 paginate:     1
 locale:       "en"
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       赵申侃  
+  url:        https://github.com/zhaoshenkan?tab=stars 
 
 # Gems
 gems:

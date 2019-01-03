@@ -1,69 +1,28 @@
-# Jekyll Cayman theme
+# Project Pages
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](https://github.com/projectpages/project-pages/wiki/).
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+# Nav Bar Jumbles
 
-You can preview the theme at https://jasonlong.github.io/cayman-theme or with real content at https://jasonlong.github.io/geo_pattern.
+If you have seemingly random pages popping up on your Nav Bar recently, this is due to the fact that GitHub/Jekyll changed a fundemental rule they used to render pages. 
 
-![](https://cl.ly/image/1T3r3d18311V/content)
+## CAUSE:
+It used to be that if a markdown file didn't have `---` frontmatter at the beginning, it wasn't rendered as a page. This was changed very recently (like in the last 2 days) so that every markdown file anywhere no matter what gets rendered as a page.  
 
-# How to use it?
+## FIX:
 
-Download the theme @ https://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+1) Go to:
 
-Unzip it and use it as a regular jekyll folder.
+`project-pages/plugin/projector/` or `yourreponame/plugin/projector/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
 
-```
-$ unzip jekyll-cayman-theme-master.zip
-```
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
-Get inside the newly extracted folder
-```
-$ cd jekyll-cayman-theme-master
-```
+and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
 
-Get the required gems
-```
-$ bundle install
-```
+2) Go to:
 
-Use it!
+`project-pages/css/theme/` or `yourreponame/css/theme/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
 
-```
-$ jekyll serve
-```
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
-For more details read about [Jekyll][1] on its web page.
-
-# Setup
-
-Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
-
-
-## baseurl
-
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: https://pietromenna.github.io/jekyll-cayman-theme
-
-In the case above the baseurl should be set to "/jekyll-cayman-theme".
-
-In the case the site sits in the root, you can leave `baseurl` as empty "".
-
-# Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenna/jekyll-cayman-theme.
-
-# Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
-
-[1]: https://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: https://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
+and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.

@@ -1,3 +1,12 @@
+---
+layout: default
+title:  "Welcome to 赵申侃!"
+date:   2017-01-03
+categories: main
+---
+
+
+
 # objc_msgSend();
 当一个对象收到一个消息（message）的时候，objc_msgSend 函数（messaging function） 会根据对象的 isa 指针 到 class dispatch table 里面去查找 method selector 。如果找不到呢？那就根据 isa 指针寻找到 superclass ，若是一直没有找到，那么就会沿着类继承层次来到了 NSObject 。一旦找到了 method selector,那么就调用 method selector 对应的方法实现并传入对应的参数。这就是 runtime 寻找方法实现的方式，消息动态绑定到方法实现。
 

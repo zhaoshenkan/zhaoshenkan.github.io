@@ -73,6 +73,7 @@ NSLog(@"id Type encoding -->%s",@encode(id));
 
 
 1. 通过resolveInstanceMethod实现动态增加方法,
+
 ```
 + (BOOL)resolveInstanceMethod:(SEL)sel
 {
@@ -171,6 +172,7 @@ class_addMethod 动态的给一个sel增加一个imp(函数实现方法)
 - doesNotRecognizeSelector:(SEL)aSelector 执行到这里的时候，两种情况:
 1. 当methodSignatureForSelector返回一种任意的方法签名的时候，也会进入doesNotRecognizeSelector，但是不会闪退
 2. 当methodSignatureForSelector返回nil时，进入doesNotRecognizeSelector就会闪退
+
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
